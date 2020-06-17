@@ -1,3 +1,9 @@
 body {
-    color: $mainBlue;
+    background: $mainGray;
+    color: $mainBeige;
+    font-family: 'Open Sans', sans-serif;
+    background: url(../assets/images/laptop-portrait-800-1199.jpg) top center/cover no-repeat $mainGray;
+    background-blend-mode: overlay;
+    height: 100%;
+    padding: 1em;
 }
