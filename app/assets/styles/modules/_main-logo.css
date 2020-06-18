@@ -1,4 +1,6 @@
 .main-logo {
-    height: 40px;
-    width: auto;
+    display: block;
+    margin: auto;
+    width: 9.375em;
+    height: auto;
 }

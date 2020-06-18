@@ -4,3 +4,5 @@
 @import 'base/_mixins';
 @import 'modules/_main-logo';
 @import 'modules/_navbar';
+@import 'modules/_hero-section';
+@import 'modules/_btn';
