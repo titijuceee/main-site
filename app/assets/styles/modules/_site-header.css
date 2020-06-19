@@ -1,6 +1,10 @@
-.main-logo {
-    display: block;
-    margin: auto;
-    width: 9.375em;
-    height: auto;
+.site-header {
+    padding:  1em 0;
+
+    &__logo{
+        margin: auto;
+        width: 9.375em;
+        height: auto;
+   
+    }
 }
