@@ -1,9 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
 body {
+    height: 100vh;
     background: $mainGray;
-    color: $mainBeige;
-    font-family: 'Open Sans', sans-serif;
     background: url(../assets/images/laptop-portrait-800-1199.jpg) top center/cover no-repeat $mainGray;
     background-blend-mode: overlay;
-    height: 100%;
-    padding: 1em;
+    color: $mainBeige;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+a {
+    color: $mainBeige;
+    text-decoration: none;
 }
