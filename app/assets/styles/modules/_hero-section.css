@@ -1,6 +1,6 @@
 .hero-section {
     display: grid;
-    height: 32rem;
+    height: 50vh;
 
     &__text-content {
         margin: auto;

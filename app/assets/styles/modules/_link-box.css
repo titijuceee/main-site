@@ -1,0 +1,20 @@
+.link-box {
+    height: 14.375rem;
+    background: url(assets/images/webdesigner-eszkozok-portrait-400-1261.jpg) center center/cover no-repeat fixed $mainBeige;
+
+    a {
+        display: grid;
+        height: 100%;
+    }
+
+    &--small {
+        height: 6.5625rem;
+    }
+
+    &__content {
+        margin: auto;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        color: $mainGray;
+    }
+}

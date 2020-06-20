@@ -1,0 +1,9 @@
+.grid {
+    display: grid;
+
+    &--main-site {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+}
