@@ -6,4 +6,10 @@
         gap: 1.25rem;
     }
 
+    @mixin atSmall {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(6, 6.5625rem) auto;
+
+    }
+
 }

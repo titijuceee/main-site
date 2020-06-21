@@ -3,6 +3,14 @@
   font-size: 1.8rem;
   text-align: center;
 
+  @mixin atSmall {
+    grid-column: 2/4;
+    grid-row: 1;
+    justify-self: self-end;
+    align-self: end;
+    padding-bottom: 0;
+  }
+
   &__list {
     list-style: none;
   }
