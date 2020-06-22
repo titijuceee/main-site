@@ -25,10 +25,18 @@
     }
 
     @mixin atPortrait {
+        background: url(assets/images/worktools-for-webdesign-425-756-portrait.jpg) center center/cover no-repeat fixed;
+    }
+
+    @mixin atPortrait2x {
         background: url(assets/images/worktools-for-webdesign-850-1511-portrait.jpg) center center/cover no-repeat fixed;
     }
 
     @mixin atLandscape {
+        background: url(assets/images/worktools-for-webdesign-960-540-landscape.jpg) center center/cover no-repeat fixed;
+    }
+
+    @mixin atLandscape2x {
         background: url(assets/images/worktools-for-webdesign-1920-1080-landscape.jpg) center center/cover no-repeat fixed;
     }
 

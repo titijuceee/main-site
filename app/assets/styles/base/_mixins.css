@@ -22,8 +22,38 @@
     }
 }
 
+@define-mixin atLandscape2x {
+    @media
+    only screen and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (orientation: landscape) and (   min--moz-device-pixel-ratio: 2),
+    only screen and (orientation: landscape) and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (orientation: landscape) and (        min-device-pixel-ratio: 2),
+    only screen and (orientation: landscape) and (                min-resolution: 192dpi),
+    only screen and (orientation: landscape) and (                min-resolution: 2dppx) { 
+    
+        /* Landscape screen, retina, stuff to override above media query */
+        @mixin-content;
+    
+    }
+}
+
 @define-mixin atPortrait {
     @media only screen and (orientation: portrait) {
         @mixin-content;
+    }
+}
+
+@define-mixin atPortrait2x {
+    @media
+    only screen and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (orientation: portrait) and (   min--moz-device-pixel-ratio: 2),
+    only screen and (orientation: portrait) and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (orientation: portrait) and (        min-device-pixel-ratio: 2),
+    only screen and (orientation: portrait) and (                min-resolution: 192dpi),
+    only screen and (orientation: portrait) and (                min-resolution: 2dppx) { 
+    
+        /* Portrait screen, retina, stuff to override above media query */
+        @mixin-content;
+    
     }
 }

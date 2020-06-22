@@ -6,6 +6,16 @@
     text-decoration: none;
     text-transform: uppercase;
     transition: all .4s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+
+    @keyframes slideBtn {
+        0% {transform: translateX(-2000px); opacity: 0; visibility: hidden;}
+        100% {transform: translateX(0px); opacity: 1; visibility: visible;}
+    }
+
+    /* animation */
+    animation: slideBtn 2s linear forwards;
 
     span {
         position: relative;
