@@ -15,3 +15,15 @@
         @mixin-content;
     }
 }
+
+@define-mixin atLandscape {
+    @media only screen and (orientation: landscape) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atPortrait {
+    @media only screen and (orientation: portrait) {
+        @mixin-content;
+    }
+}

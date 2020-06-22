@@ -5,7 +5,14 @@
   height: 100vh;
   width: 100vw;
   z-index: -2;
-  background: url(../assets/images/laptop-portrait-800-1199.jpg) top center/cover no-repeat;
+
+  @mixin atPortrait {
+    background: url(../assets/images/webdesigner-girl-keep-working-850-1511-portrait.jpg) center center/cover no-repeat;
+  }
+
+  @mixin atLandscape {
+    background: url(../assets/images/webdesigner-girl-keep-working-1920-1080-landscape.jpg) top center/cover no-repeat;
+  }
 
   &::after {
       position: absolute;

@@ -1,7 +1,6 @@
 .link-box {
     position: relative;
     line-height: 6;
-    background: url(assets/images/webdesigner-eszkozok-portrait-400-1261.jpg) bottom center/cover no-repeat fixed;
     transition: all .5s ease-in;
 
     &::after {
@@ -23,6 +22,14 @@
     @mixin atSmall {
         grid-row: span 2;
         line-height: 1;
+    }
+
+    @mixin atPortrait {
+        background: url(assets/images/worktools-for-webdesign-850-1511-portrait.jpg) center center/cover no-repeat fixed;
+    }
+
+    @mixin atLandscape {
+        background: url(assets/images/worktools-for-webdesign-1920-1080-landscape.jpg) center center/cover no-repeat fixed;
     }
 
     a {
