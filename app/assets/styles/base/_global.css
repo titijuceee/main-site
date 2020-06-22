@@ -5,11 +5,16 @@
   }
 
 body {
+    display: grid;
+    min-height: 100vh;
     background-color: $mainGray;
     color: $mainBeige;
     font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
-   
+
+    @mixin atLarge {
+        grid-template-rows: 1fr 6fr 1fr;
+    }
 }
 
 a {

@@ -1,15 +1,26 @@
 .grid {
     display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
 
     &--main-site {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
+        height: 100%;
+
+        @mixin atSmall {
+            grid-template-rows: repeat(9, 1fr);
+        }
+
+        @mixin atLarge {
+            grid-template-rows: repeat(6, 1fr);
+        }
     }
 
     @mixin atSmall {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto repeat(6, 6.5625rem) auto;
+    }
 
+    @mixin atLarge {
+        grid-template-columns: repeat(6, 1fr);
     }
 
 }
