@@ -1,0 +1,12 @@
+.page-template {
+
+    &--home {
+        display: grid;
+        min-height: 100vh;
+    
+        @mixin atLarge {
+            grid-template-rows: 1fr 6fr 1fr;
+        }
+    
+    }
+}

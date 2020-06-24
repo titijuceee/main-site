@@ -1,6 +1,12 @@
 .site-header {
     padding:  1em 0;
 
+    &__navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &__logo {
         display: block;
         margin: auto;
