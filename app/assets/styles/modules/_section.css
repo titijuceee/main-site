@@ -1,0 +1,99 @@
+.section {
+  margin-bottom: 10em;
+  margin-top: 10em;
+
+
+  @mixin atMedium {
+    position: relative;
+    height: auto;
+    display: flex;
+    padding: 0;
+  }
+
+  &:nth-child(2n+2) {
+    @mixin atMedium {
+      flex-direction: row-reverse;
+    }
+  }
+  
+
+  &__img {
+    position: relative;
+    height: 12em;
+    @mixin atMedium {
+      position: sticky;
+      top: 0;
+      width: 50%;
+      height: 100vh;
+      margin: 0;
+      
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(39,39,39,1) 0%,rgba(39,39,39,0.75) 15%,rgba(39,39,39,0.75) 50%,rgba(39,39,39,0.75) 85%,rgba(39,39,39,1) 100%);
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+
+  &__content {
+    padding: 3em 1em 0;
+
+    @mixin atMedium {
+      width: 50%;
+      padding: 3em;
+    }
+
+    & .my-blog {
+      max-width: 25rem;
+      margin: 0 auto;
+    }
+    
+  }
+
+  &__title {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(3rem, 7vw, 6.125rem);
+    font-weight: 300;
+    margin-bottom: .5em;
+
+  }
+
+  &__subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 300;
+    margin-bottom: 1em;
+
+    @mixin atSmall {
+      padding-left: 1em;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 1.5;
+
+    @mixin atSmall {
+      max-width: 25rem;
+      margin: 0 auto;
+    }
+
+    &--centered {
+      text-align: center;
+    }
+
+  }
+
+}

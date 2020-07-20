@@ -1,0 +1,28 @@
+.portfolio {
+  max-width: 25rem;
+  margin: 0 auto;
+
+  &__item {
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin-bottom: 2em;
+    padding-top: 100%;
+
+    &-inside {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+  }
+
+}

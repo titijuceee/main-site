@@ -1,0 +1,41 @@
+.top {
+  height: 100vh;
+  display: grid;
+
+  &__content {
+    margin: auto;
+    text-align: center;
+  }
+
+  &__logo {
+    display: inline-block;
+    width: 220px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    display: block;
+    position: relative;
+    font-weight: 300;
+
+    &:before,
+    &::after {
+      position: absolute;
+      content: '';
+      top: 20px;
+      left: 100px;
+      width: 1rem;
+      height: 1rem;
+      border-top: 1px solid $mainBeige;
+      border-right: 1px solid $mainBeige;
+      transform: rotate(135deg) skew(20deg, 20deg);
+      opacity: .6;
+    }
+
+    &::after {
+      top: 26px;
+      opacity: 1;
+    }
+  }
+}

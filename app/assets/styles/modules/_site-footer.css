@@ -1,6 +1,36 @@
 .site-footer {
-    margin-top: auto;
-    padding: 1em 0;
-    font-weight: 300;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: .875rem;
+  font-weight: 300;
+  padding: 2em 0;
+  background-color: #111111;
+
+  @mixin atSmall {
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  & p,
+  & a {
+    margin-bottom: 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @mixin atSmall {
+      margin: 0;
+      padding: 0 1em;
+      border-right: 1px solid $mainBeige;
+
+      &:last-child {
+        border: none;
+      }
+      
+    }
+  }
 }

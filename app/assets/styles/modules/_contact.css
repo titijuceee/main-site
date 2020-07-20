@@ -1,0 +1,20 @@
+.contact {
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 2em;
+
+  @mixin atSmall {
+    max-width: 25rem;
+    margin: 0 auto 2em;
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 1rem;
+    font-style: normal;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
