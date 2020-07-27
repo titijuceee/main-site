@@ -2,6 +2,10 @@
   margin-bottom: 10em;
   margin-top: 10em;
 
+  @mixin atLandscape {
+    margin-right: 60px; 
+    /* TODO: még ellenőrizni kell */
+  }
 
   @mixin atMedium {
     position: relative;

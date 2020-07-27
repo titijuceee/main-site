@@ -1,36 +1,82 @@
 .site-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: .875rem;
-  font-weight: 300;
-  padding: 2em 0;
-  background-color: #111111;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+  width: 100%;
 
-  @mixin atSmall {
-    flex-direction: row;
-    font-size: 1rem;
-  }
-
-  & p,
-  & a {
-    margin-bottom: 1em;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 300;
+    padding: 2em 0;
 
     @mixin atSmall {
-      margin: 0;
-      padding: 0 1em;
-      border-right: 1px solid $mainBeige;
+      flex-direction: row;
+      font-size: 1rem;
+      padding: 1.5em 0;
+    }
 
-      &:last-child {
-        border: none;
+    @mixin atPortrait {
+      padding-bottom: 100px;
+    }
+
+    &__list {
+      list-style: none;
       }
-      
+    
+  
+    &__item {
+      margin-bottom: 1em;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      @mixin atSmall {
+        display: inline-block;
+        margin: 0;
+        padding: 0 1em;
+        border-right: 1px solid $mainBeige;
+  
+        &:last-child {
+          border: none;
+        }
+        
+      }
+    }
+
+    & a {
+      display: inline-block;
+      position: relative;
+      transform-origin: 50%;
+      transition: all .3s ease-out;
+  
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: -4px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $mainBeige;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: all .3s ease-out;
+      }
+  
+      &:hover,
+      &:focus {
+  
+        &::after {
+          transform: scaleX(1);
+        }
+      }
     }
   }
+
+
 }
