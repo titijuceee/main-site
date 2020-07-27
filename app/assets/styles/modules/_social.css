@@ -4,7 +4,6 @@
   align-items: center;
   background: url(assets/images/submark-light.svg) center center no-repeat;
   height: 150px;
-  margin-bottom: 2em;
 
   &__icon {
     font-size: 1.8rem;

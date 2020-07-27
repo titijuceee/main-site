@@ -75,6 +75,8 @@
         transform: scale(1.1);
       }
     }
+
+    /* TODO: bug-fix megjelenítés hoverre vagy touchra problémás */
   
     &__text {
       display: none;

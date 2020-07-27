@@ -1,6 +1,13 @@
 .section {
-  margin-bottom: 10em;
-  margin-top: 10em;
+  margin-bottom: 5em;
+
+  &:last-of-type {
+    margin-bottom: 100px;
+
+    @mixin atMedium {
+      margin-bottom: 0;
+    }
+  }
 
   @mixin atLandscape {
     margin-right: 60px; 
@@ -23,7 +30,9 @@
 
   &__img {
     position: relative;
-    height: 12em;
+    z-index: -1;
+    height: 18em;
+
     @mixin atMedium {
       position: sticky;
       top: 0;
@@ -52,7 +61,8 @@
   }
 
   &__content {
-    padding: 3em 1em 0;
+    padding: 0 1em;
+    margin: -2em 0 0;
 
     @mixin atMedium {
       width: 50%;
