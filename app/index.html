@@ -6,6 +6,7 @@
     <title>Titi Judit Design - webdesign - sitebuild - webfejlesztés</title>
     <script src="https://kit.fontawesome.com/e2e54ec4d5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Parisienne&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <!-- TODO: mérőkódok beillesztése -->
 </head>
 <body>
 
@@ -67,8 +68,11 @@
     
     <section class="section" id="ki-vagyok">
         <div class="section__img">
-            <!-- TODO: kép optimalizálás -->
-            <img id="about-img" src="assets/images/ezvagyoken.jpg" alt="">
+            <picture>
+                <source sizes="960px" data-srcset="assets/images/ez-vagyok-en-960-1080-i.jpg 960w, assets/images/ez-vagyok-en-hdpi-1920-2160-i.jpg 1920w" media="(min-width: 1000px)">
+                <source data-srcset="assets/images/ez-vagyok-en-1000-422-i.jpg 1000w, assets/images/ez-vagyok-en-hi-dpi-2000-843-i.jpg 2000w" media="(min-width: 530px)">
+                <img class="lazyload" data-srcset="assets/images/ez-vagyok-en-530-530-i.jpg 530w, assets/images/ez-vagyok-en-hi-dpi-1060-1060-i.jpg 640w" alt="Ez vagyok én">
+              </picture> 
         </div>
         <div class="section__content">
             <h2 class="section__title">ki vagyok?</h2>
@@ -83,9 +87,12 @@
     </section>
 
     <section class="section" id="mit-csinalok">
-        <!-- TODO: kép optimalizálás -->
         <div class="section__img">
-            <img id="services-img" src="assets/images/dolgozom.jpg" alt="">
+            <picture>
+                <source sizes="960px" data-srcset="assets/images/webfejlesztes-folyamatban-960w.jpg 960w, assets/images/webfejlesztes-folyamatban-hi-dpi-1920w.jpg 1920w" media="(min-width: 1000px)">
+                <source data-srcset="assets/images/webfejlesztes-folyamatban-1000w.jpg 1000w, assets/images/webfejlesztes-folyamatban-hi-dpi-2000w.jpg 2000w" media="(min-width: 530px)">
+                <img class="lazyload" data-srcset="assets/images/webfejlesztes-folyamatban-530w.jpg 530w, assets/images/webfejlesztes-folyamatban-hi-dpi-1060w.jpg 640w" alt="Ez vagyok én">
+              </picture> 
         </div>
         <div class="section__content">
             <h2 class="section__title">mit csinálok?</h2>
@@ -114,8 +121,11 @@
 
     <section class="section" id="munkaim">
         <div class="section__img">
-            <!-- TODO: kép optimalizálás -->
-            <img id="portfolio-img" src="assets/images/worktools-for-webdesign-1920-1080-landscape.jpg" alt="">
+            <picture>
+                <source sizes="960px" data-srcset="assets/images/webdesigner-munkaallomas-960w.jpg 960w, assets/images/webdesigner-munkaallomas-hi-dpi-1920w.jpg 1920w" media="(min-width: 1000px)">
+                <source data-srcset="assets/images/webdesigner-munkaallomas-1000w.jpg 1000w, assets/images/webdesigner-munkaallomas-hi-dpi-2000w.jpg 2000w" media="(min-width: 530px)">
+                <img class="lazyload" data-srcset="assets/images/webdesigner-munkaallomas-530w.jpg 530w, assets/images/webdesigner-munkaallomas-hi-dpi-1060w.jpg 640w" alt="Webdesigner munkállomása: iMac, MacBook, IPhone, Wacoom">
+              </picture> 
         </div>
         <div class="section__content">
             <h2 class="section__title">a munkáim érdekelnek?</h2>
@@ -123,38 +133,43 @@
             <div class="portfolio">
                 <div class="portfolio__item">
                     <div class="portfolio__item-inside">
-                        <!-- TODO: kép optimalizálás -->
-                        <img src="assets/images/nagonsin.jpg" alt="">
+                        <img src="assets/images/projekt-1.jpg" alt="Balasana - jógastúdió - reszponzív weboldal">
                     </div>
                 </div>
                 <div class="portfolio__item">
                     <div class="portfolio__item-inside">
-                        <!-- TODO: kép optimalizálás -->
-                        <img src="assets/images/plusi.jpg" alt="">
+                        <img srcset="assets/images/projekt-2.jpg 400w, assets/images/projekt-2-hi-dpi.jpg 800w" alt="Brown Steel&Hall - csarnokgyártó - reszponzív landingpage">
                     </div>
                 </div>
                 <div class="portfolio__item">
                     <div class="portfolio__item-inside">
-                        <!-- TODO: kép optimalizálás -->
-                        <img src="assets/images/sportolj-otthon.png" alt="">
+                        <img srcset="assets/images/projekt-3.jpg 400w, assets/images/projekt-3-hi-dpi.jpg 800w" alt="JustaCup - nemzetközi teaforgalmazó - reszponzív landingpage">
                     </div>
                 </div>
                 <div class="portfolio__item">
                     <div class="portfolio__item-inside">
-                        <!-- TODO: kép optimalizálás -->
-                        <img src="assets/images/korosi-mama.jpg" alt="">
+                        <img srcset="assets/images/projekt-4.jpg 400w, assets/images/projekt-4-hi-dpi.jpg 800w" alt="Kórosi Mama - rétes és pite - arculat és logo">
                     </div>
                 </div>
                 <div class="portfolio__item">
                     <div class="portfolio__item-inside">
-                        <!-- TODO: kép optimalizálás -->
-                        <img src="assets/images/balasana.png" alt="">
+                        <img srcset="assets/images/projekt-5.jpg 400w, assets/images/projekt-5-hi-dpi.jpg 800w" alt="Nagonsin - fa padló és falburkolatok - arculat, logo és reszponzív weboldal">
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <div class="portfolio__item-inside">
+                        <img srcset="assets/images/projekt-6.jpg 400w, assets/images/projekt-6-hi-dpi.jpg 800w" alt="Plüsi-Püppa - plüsskedvencek - arculat, logo és reszponzív weboldal">
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <div class="portfolio__item-inside">
+                        <img srcset="assets/images/projekt-7.jpg 400w, assets/images/projekt-7-hi-dpi.jpg 800w" alt="Sportolj Otthon - otthoni sporteszközök - arculat, logo">
                     </div>
                 </div>
             </div>
             <p class="section__text section__text--centered">
                 Érdekelnek a részletek is? Nézd meg itt:
-                <!-- TODO: link elésítés -->
+                <!-- TODO: portfólió link elésítés - komplett portfólió oldalt meg kell csinálni -->
                 <a href="#" class="btn">Az én portfólióm <span class="btn__line"></span></a>
             </p>
         </div>
@@ -162,8 +177,11 @@
     
     <section class="section" id="mit-varhatsz-tolem">
         <div class="section__img">
-            <!-- TODO: kép optimalizálás -->
-            <img id="whyme-img" src="assets/images/mierten.jpg" alt="">
+            <picture>
+                <source sizes="960px" data-srcset="assets/images/kodreszlet-kepessegek-960w.jpg 960w, assets/images/kodreszlet-kepessegek-hi-dpi-1920w.jpg 1920w" media="(min-width: 1000px)">
+                <source data-srcset="assets/images/kodreszlet-kepessegek-1000w.jpg 1000w, assets/images/kodreszlet-kepessegek-hi-dpi-2000w.jpg 2000w" media="(min-width: 530px)">
+                <img class="lazyload" data-srcset="assets/images/kodreszlet-kepessegek-530w.jpg 530w, assets/images/kodreszlet-kepessegek-hi-dpi-1060w.jpg 640w" alt="Kódrészlet - avagy mit várhatsz tőlem?">
+              </picture> 
         </div>
         <div class="section__content">
             <h2 class="section__title">mit várhatsz tőlem?</h2>
@@ -198,8 +216,11 @@
 
     <section class="section" id="mit-ne-varj">
         <div class="section__img">
-            <!-- TODO: kép optimalizálás -->
-            <img id="noway-img" src="assets/images/pawel-czerwinski-xt1tPXqOdcc-unsplash.jpg" alt="">
+            <picture>
+                <source sizes="960px" data-srcset="assets/images/red-lamp-960w.jpg 960w, assets/images/red-lamp-hi-dpi-1920w.jpg 1920w" media="(min-width: 1000px)">
+                <source data-srcset="assets/images/red-lamp-1000w.jpg 1000w, assets/images/red-lamp-hi-dpi-2000w.jpg 2000w" media="(min-width: 530px)">
+                <img class="lazyload" data-srcset="assets/images/red-lamp-530w.jpg 530w, assets/images/red-lamp-hi-dpi-1060w.jpg 640w" alt="Piros lámpa - mit ne várj tőlem?">
+              </picture> 
         </div>
         <div class="section__content">
             <h2 class="section__title">mit ne várj?</h2>
@@ -225,8 +246,11 @@
 
     <section class="section" id="az-en-blogom">
         <div class="section__img">
-            <!-- TODO: kép optimalizálás -->
-            <img id="blog-img" src="assets/images/irogep.jpg" alt=""> 
+            <picture>
+                <source sizes="960px" data-srcset="assets/images/irogep-960w.jpg 960w, assets/images/irogep-hi-dpi-1920w.jpg 1920w" media="(min-width: 1000px)">
+                <source data-srcset="assets/images/irogep-1000w.jpg 1000w, assets/images/irogep-hi-dpi-2000w.jpg 2000w" media="(min-width: 530px)">
+                <img class="lazyload" data-srcset="assets/images/irogep-530w.jpg 530w, assets/images/irogep-hi-dpi-1060w.jpg 640w" alt="Írógép - az én blogom">
+              </picture> 
         </div>
         <div class="section__content">
             <div class="my-blog">
@@ -252,8 +276,10 @@
         
     <section class="section" id="itt-elersz">
         <div class="section__img">
-            <!-- TODO: kép optimalizálás -->
-            <img id="contact-img" src="assets/images/hello.jpg" alt="">
+            <picture>
+                <source sizes="960px" data-srcset="assets/images/hello-neon-960w.jpg 960w, assets/images/hello-neon-hi-dpi-1920w.jpg 1920w" media="(min-width: 1000px)">
+                <source data-srcset="assets/images/hello-neon-1000w.jpg 1000w, assets/images/hello-neon-hi-dpi-2000w.jpg 2000w" media="(min-width: 530px)">
+                <img class="lazyload" data-srcset="assets/images/hello-neon-530w.jpg 530w, assets/images/hello-neon-hi-dpi-1060w.jpg 640w" alt="Neon Helló tábla - itt elérsz">
         </div>
         <div class="section__content">
             <h2 class="section__title">itt elérsz</h2>
@@ -264,14 +290,14 @@
                 <address class="contact__item">2230 Gyömrő, Nefelejcs utca 60.</address>
             </div>
             <h3 class="section__subtitle">Kövess itt is!</h3>
-            <div class="social"> <!-- TODO:linkeket élesíteni -->
-                <a class="social__icon" href="http://"><i class="fab fa-facebook"></i></a>
-                <a class="social__icon" href="http://"><i class="fab fa-instagram"></i></a>
-                <a class="social__icon" href="http://"><i class="fab fa-github"></i></a>
-                <a class="social__icon" href="http://"><i class="fab fa-behance"></i></a>
-                <a class="social__icon" href="http://"><i class="fab fa-dribbble"></i></a>
-                <a class="social__icon" href="http://"><i class="fab fa-linkedin-in"></i></a>
-                <a class="social__icon" href="http://"><i class="fab fa-pinterest"></i></a>
+            <div class="social">
+                <a class="social__icon" href="https://www.facebook.com/titijudit.webdesign/"><i class="fab fa-facebook"></i></a>
+                <a class="social__icon" href="https://www.instagram.com/titijudit.webdesigner/"><i class="fab fa-instagram"></i></a>
+                <a class="social__icon" href="https://github.com/titijuceee"><i class="fab fa-github"></i></a>
+                <a class="social__icon" href="https://www.behance.net/titijudit"><i class="fab fa-behance"></i></a>
+                <a class="social__icon" href="https://dribbble.com/titi-judit"><i class="fab fa-dribbble"></i></a>
+                <a class="social__icon" href="https://www.linkedin.com/in/titijudit/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social__icon" href="https://hu.pinterest.com/titijudit/"><i class="fab fa-pinterest"></i></a>
             </div>
 
         </div>
