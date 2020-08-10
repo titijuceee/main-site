@@ -16,6 +16,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 300;
+    padding-bottom: 1px;
 
     @mixin atSmall {
         font-size: 1.125rem;
