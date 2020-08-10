@@ -72,6 +72,12 @@
       max-width: 25rem;
       margin: 0 auto;
     }
+
+    &--centered {
+      width: 100%;
+      max-width: 50rem;
+      margin: 0 auto;
+    }
     
   }
 
@@ -81,6 +87,9 @@
     font-weight: 300;
     margin-bottom: .5em;
 
+    &--centered {
+      text-align: center;
+    }
   }
 
   &__subtitle {
@@ -105,6 +114,21 @@
 
     &--centered {
       text-align: center;
+    }
+
+    &--wide {
+      max-width: 50rem;
+
+      & h2,
+      & p {
+        margin-bottom: 1rem;
+      }
+
+      & ol,
+      & ul {
+        padding-left: 20px;
+        margin-bottom: 1rem;
+      }
     }
 
   }
