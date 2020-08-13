@@ -76,8 +76,6 @@
       }
     }
 
-    /* TODO: bug-fix megjelenítés hoverre vagy touchra problémás */
-  
     &__text {
       display: none;
       padding-left: 15px;
@@ -91,12 +89,15 @@
       transition: all .5s ease-in-out;
 
       @mixin atMedium {
+        display: inline-block;
+
         @mixin atPortrait {
           transform: scaleX(1);
           opacity: 1;
           visibility: visible;
+          width: 100%;
         }
-        display: inline-block;
+        
       }
 
       &--is-visible {
