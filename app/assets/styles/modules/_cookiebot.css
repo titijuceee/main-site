@@ -1,0 +1,16 @@
+#CybotCookiebotDialog {
+  background-color: $mainBeige;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.CybotCookiebotDialogBodyButton {
+  background-color: $mianGray;
+  color: $mainBeige;
+  border-radius: 2px;
+}
+
+#CybotCookiebotDialogBodyLevelButtonsSelectPane,
+#CybotCookiebotDialogBodyLevelDetailsWrapper {
+  border: 1px solid $mianGray;
+}
