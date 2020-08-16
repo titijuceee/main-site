@@ -54,6 +54,7 @@
       color: $mainBeige;
       background: none;
       border: none;
+      text-transform: inherit;
     }
 
 }
