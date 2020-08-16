@@ -5,7 +5,7 @@
 }
 
 .CybotCookiebotDialogBodyButton {
-  background-color: $mianGray !important;
+  background-color: $mainGray !important;
   color: $mainBeige !important;
   border-radius: 2px !important;
 }
