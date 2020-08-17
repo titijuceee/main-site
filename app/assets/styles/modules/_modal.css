@@ -52,11 +52,15 @@
   &__close {
     position: absolute;
     top: 15px;
-    right: 75px;
+    right: 15px;
     color: $mainBeige;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
+
+    @mixin atLandscape {
+      right: 75px;
+    }
 
     &:hover,
     &:focus {
