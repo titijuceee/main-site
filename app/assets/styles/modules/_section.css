@@ -13,10 +13,12 @@
     position: relative;
     height: auto;
     display: flex;
+    gap: 20px;
     padding: 0;
+    margin-bottom: 0;
   }
 
-  &:nth-child(2n+2) {
+  &:nth-child(2n+1) {
     @mixin atMedium {
       flex-direction: row-reverse;
     }
@@ -30,11 +32,10 @@
 
     @mixin atMedium {
       position: sticky;
-      top: 0;
+      top: 40px;
       width: 50%;
-      height: 100vh;
-      margin: 0;
-      
+      height: calc(100vh-80px);
+      margin: 40px 0;
     }
 
     &::after {
@@ -60,12 +61,13 @@
   }
 
   &__content {
-    padding: 0 1em;
+    padding: 0 1em 0 3em;
     margin: -2em 0 0;
 
     @mixin atMedium {
       width: 50%;
       padding: 3em;
+      margin: 40px 0;
     }
 
     & .my-blog {
@@ -86,20 +88,50 @@
     font-size: clamp(3rem, 7vw, 6.125rem);
     font-weight: 300;
     margin-bottom: .5em;
+    margin-left: -0.5em;
 
     &--centered {
       text-align: center;
     }
+
+    &--smaller {
+      font-size: 3rem;
+
+      @mixin atSmall {
+        font-size: 4rem;
+      }
+    }
   }
 
   &__subtitle {
+    position: relative;
     font-family: 'Raleway', sans-serif;
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 300;
     margin-bottom: 1em;
 
-    @mixin atSmall {
+    &::before {
+      position: absolute;
+      content: '';
+      top: 12px;
+      left: -40px;
+      width: 30px;
+      height: 1px;
+      background-color: $mainBeige;
+    }
+
+    @mixin atMedium {
       padding-left: 1em;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 20px;
+        left: -30px;
+        width: 50px;
+        height: 1px;
+        background-color: $mainBeige;
+      }
     }
   }
 

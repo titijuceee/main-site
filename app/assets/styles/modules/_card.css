@@ -9,13 +9,34 @@
   }
 
   &__title {
+    position: relative;
     font-family: 'Raleway', sans-serif;
     font-size: clamp(1.5rem, 3vw, 2rem);
     font-weight: 300;
     margin-bottom: 1em;
 
-    @mixin atSmall {
+    &::before {
+      position: absolute;
+      content: '';
+      top: 12px;
+      left: -40px;
+      width: 30px;
+      height: 1px;
+      background-color: $mainBeige;
+    }
+
+    @mixin atMedium {
       padding-left: 1em;
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 20px;
+        left: -30px;
+        width: 50px;
+        height: 1px;
+        background-color: $mainBeige;
+      }
     }
   }
 
