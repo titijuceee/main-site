@@ -1,9 +1,11 @@
 .top {
   height: 100vh;
   display: grid;
+  padding-bottom: 120px;
 
   @mixin atLandscape {
     margin-right: 60px; 
+    padding-bottom: 0;
   }
 
   &__content {
