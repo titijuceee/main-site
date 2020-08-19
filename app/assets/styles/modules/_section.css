@@ -78,7 +78,7 @@
     &--centered {
       width: 100%;
       max-width: 50rem;
-      margin: 0 auto;
+      margin: 60px auto 0;
     }
     
   }
